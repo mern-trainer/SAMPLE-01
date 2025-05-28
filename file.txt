@@ -1,0 +1,8 @@
+Hello World!
+
+git clone <url> -> to clone repo
+
+git init -> initialize local repo
+
+git add . -> staged changes
+git add <file_name1> <file_name2> ->  
