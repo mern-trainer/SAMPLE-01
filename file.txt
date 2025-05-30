@@ -7,10 +7,9 @@ git init -> initialize local repo
 git config --global user.email "sample@gmail.com"
 git config --global user.name "name"
 
+git remote add <remote_name> <remote_url>
+
 git add . -> staged changes
 git add <file_name1> <file_name2> ->  
 git commit -m "message"
-
-git remote add <remote_name> <remote_url>
-
 git push <remote_name> <branch_name>
