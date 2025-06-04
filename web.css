@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: red;
+    margin: 40px;
+    /* margin ->top ->right ->bottom ->left 
+    margin: 40px 20px 30px 10px; */
+    /* padding ->top ->right ->bottom ->left 
+    padding: 40px 20px 30px 10px; */
+    border: 6px solid black;
+    border-width: 3px;
+    border-color: red;
+    border-style: double;
+    border-top-style: none;
+    border-bottom: none;
+    background-image: url(https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Display */
+
+/* none, inline, block, inline-block, flex */
+
+.d-flex{
+    display: flex;
+    gap: 10px;
+    /* row, row-reverse, column, column-reverse */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /* justify-content, align-items */
+    /* Align content in main axis */
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+
+    /* row -> jc -> h, ai -> v */
+    /* column -> jc -> v, ai -> h */
+}
+
+.d-flex div {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 40px;
+    height: 60px;
+    align-items: center;
+}
+
+header .left-section{
+    display: flex;
+    gap: 30px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}

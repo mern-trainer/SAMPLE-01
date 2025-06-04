@@ -4,17 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final</title>
+    <!-- inline, internal, external -->
+     <!-- selectors -->
+      <!-- 
+        1. Universal Selector
+        2. Element/TagName Selector
+        3. Class Selector
+        4. ID Selector
+        5. Grouping Selector
+        6. Child selector
+      -->
+
+      <style>
+        dl{
+            color: rebeccapurple;
+        }
+        .demo{
+            color: green;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #file{
+            display: none;
+        }
+        /* box model -> content, padding, border, margin */
+        .file{
+            background-color: aqua;
+            
+        }
+      </style>
 </head>
 <body>
     <!-- List -->
     <!-- Ordered List, Unordered list, defenition list -->
-    <ol type="I">
+    <ol class="demo" type="I">
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
     </ol>
 
-    <ul type="square">
+    <ul class="demo" type="square">
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -45,8 +73,8 @@
     <!-- Form -->
 
     <form action="/about.html">
-        <label for="file">Username:</label>
-        <input type="file" id="file" name="file" hidden>
+        <label for="file" class="file">File</label>
+        <input type="file" id="file" name="file">
 
         <input name="tv" type="checkbox">TV
         <input name="mobile" type="checkbox">Mobile
@@ -58,6 +86,14 @@
         <input type="radio" name="gender" value="Other"> Other 
 
         <input type="datetime-local">
+
+        <select name="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
         <button type="submit">Submit</button>
     </form>
 </body>
