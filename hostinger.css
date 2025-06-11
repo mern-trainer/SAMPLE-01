@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    background-color: red;
+    height: 60px;
+    align-items: center;
+}
+
+header .left{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header .right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
